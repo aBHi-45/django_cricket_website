@@ -1,0 +1,26 @@
+{% extends 'basic.html' %}
+{% load crispy_forms_tags %}
+<br>
+<br>
+<strong>Enter the Details of the News</strong>
+{% block body %}
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+        <table>
+<br>
+            {% crispy a %}
+            <br>
+
+        </table>
+      
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+
+</div>
+
+
+{% endblock %}
